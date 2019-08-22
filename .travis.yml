@@ -18,6 +18,9 @@ deploy:
   provider: releases
   api_key:
     secure: RdK6yX1xlOHH8i4rt6quMb0yy8m0Rxp+qQRDrSaP8yb4fptqvCmj1d6n0rvJ1xRRBrTirnspqO++G0hRYD4ywjZeUAx2L08G45eWRmUFGtrBtm/8pF51z3LgaUgZ+zeCMst9zTR4UEhnRWAcwaP3/zqjeNkYstsqKmFTVpOTpsTPxgOqe/bdlieV4hEmMr/CIXYyHJEgp0uXvA5jo8AUYJDl71JoEnlIBf1t++EEHszUi9ZFcW4poQUU2nmlnMfjLozsVtpcXMkE03+m2k6QntwKxWvIkEXphYziHq0jBwQhjV9EPdZCJgozcqZvaoYb2kkgjtWhoL/bmiCeAHlDhag1i3ENrBSNseT/0t57djJ5/y0HAHD9Jo7JumzFHoRcUZp87PO1onsAPMxJUsTZTS592abeYUSLm87LjtrxPmJHjbdWMNcAK0JdDKPpFGJgXcUx3cjyX+5nYP0YNyjARaeh4SF8ejYdQEPk5ERS3TTf4tKSSJuhbEYpcWoAa8OVG3iW4sQ/VgCykXt0DR+xaGoVq+07Wbq8r+vbkBJV1OK4zn1rGDVKBM7R5OnapCW0VEi7r+klyNN5dCqTdVidfsho6DXHcWzwsIPtuYJPTRYvzTc+Xh/dqwkM5S63ktElQZzTp8v1SKl5PIdX0gtAaspU6d967nqqfAfwo+5Caqc=
-  file: ''
+  file:
+    - "release/go-aws-kms-v$VERSION-linux-amd64"
+    - "release/go-aws-kms-v$VERSION-darwin-amd64"
+  skip_cleanup: true
   on:
     tags: true
