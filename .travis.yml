@@ -2,11 +2,15 @@ language: go
 
 # Force-enable Go modules. Also force go to use the code in vendor/
 # These will both be unnecessary when Go 1.13 lands.
-env: GO111MODULE=on GOFLAGS='-mod vendor'
+env: GO111MODULE=on
+
+os:
+  - linux
+  - osx
 
 # Only clone the most recent commit.
-git:
-  depth: 1
+script:
+  - go build .
 
 # Don't email me the results of the test runs.
 notifications:
