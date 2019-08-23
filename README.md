@@ -1,5 +1,7 @@
 # Encrypting and Decrypting files with Amazon Key Service and storing secrets with Amazon Secret Manager
 
+[![Build Status](https://travis-ci.org/igorrendulic/go-aws-kms.svg?branch=master)](https://travis-ci.org/igorrendulic/go-aws-kms)
+
 Easy to use CLI tool for encrypting and decrypting files using AWS managed keys. It also supports Amazon Secret Manager for retrieval of secrets such as OAuth tokens, database credentials, API keys, ... 
 
 It's intention is to enable developers to store and deploy configuration files and access credentials or other secrets stored within ASM (Amazon Secret Manager). 
