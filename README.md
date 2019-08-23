@@ -179,3 +179,6 @@ The returned result of secrets is a `map`:
 map[string]string
 ```
 
+# Limitations
+
+AWS KMS can encrypt only files up to 4KB (4096 bytes). These operations are designed to encrypt and decrypt data keys. Although you might use them to encrypt small amounts of data, such as a password or RSA key, they are not designed to encrypt application data.
